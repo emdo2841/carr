@@ -1,20 +1,24 @@
 
 import './App.css'
-import Head from './head'
-import Counter from './counter'
+import Header from './component/header'
+import User from './component/User'
 
 function App() {
-  const a = 4
-  const b = 5
-  const result = a + b
+  
 
   return (
-    <main>
-      <Head/>
-      <h1>CareerEX</h1>
-
-      <h3>{result}</h3>
-      <Counter/>
+    <main className="flex items-center justify-center min-h-screen bg-gray-100">
+      <Header />
+      <User />
+      {/* <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="bg-white shadow-lg rounded-xl p-8 max-w-sm text-center">
+          <h1 className="text-2xl font-bold text-blue-600 mb-4">
+            Test Blue Color
+          </h1>
+          <div className="w-24 h-24 mx-auto rounded-full border-4 border-blue-600 mb-4"></div>
+          <p className="text-blue-700">This text should be blue.</p>
+        </div>
+      </div> */}
     </main>
   );
 }
