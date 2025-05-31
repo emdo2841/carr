@@ -2,6 +2,7 @@
 import './App.css'
 import Header from './component/header'
 import User from './component/User'
+import TaskApp from './component/TaskApp';
 
 function App() {
   
@@ -9,7 +10,9 @@ function App() {
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-100">
       <Header />
-      <User />
+      <TaskApp />
+      {/* Uncomment the User component to display user information */}
+      {/* <User /> */}
       {/* <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white shadow-lg rounded-xl p-8 max-w-sm text-center">
           <h1 className="text-2xl font-bold text-blue-600 mb-4">
